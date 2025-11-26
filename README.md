@@ -3,7 +3,67 @@
 This is a beginner-friendly calculator program written in C.  
 It can perform addition, subtraction, multiplication, and division.
 
-## How to run:
+---
 
-1. Compile: gcc calculator.c -o calculator  
-2. Run: ./calculator
+## How It Works
+
+The Simple Calculator is a beginner-friendly C program designed to perform basic arithmetic operations: addition, subtraction, multiplication, and division.
+
+**Program Logic:**
+
+1. **User Input:**  
+   - The program displays a menu with four options: add, subtract, multiply, and divide.  
+   - The user selects an operation by entering a number (1-4).  
+
+2. **Number Input:**  
+   - After selecting an operation, the program asks the user to enter **two numbers**.  
+   - These numbers are stored in variables `a` and `b`.  
+
+3. **Perform Operation:**  
+   - Using a `switch-case` statement, the program executes the chosen arithmetic operation:  
+     - `1` → Addition (`a + b`)  
+     - `2` → Subtraction (`a - b`)  
+     - `3` → Multiplication (`a * b`)  
+     - `4` → Division (`a / b`)  
+
+4. **Error Handling:**  
+   - If the user chooses division and the second number is zero, the program prints an error message: **“Cannot divide by zero!”**  
+
+5. **Output:**  
+   - The program prints the result of the selected operation with two decimal points of precision.  
+   - If the user enters an invalid choice, the program prints **“Invalid choice!”**  
+
+---
+
+## How to Run
+
+### 1. Compile the code:
+```
+gcc calculator.c -o calculator
+```
+
+### 2. Run the program:
+```
+./calculator
+```
+
+---
+
+## Preview
+
+```
+Choose an operation:
+1 - add
+2 - subtract
+3 - multiply
+4 - divide
+Your choice: 1
+Enter two numbers: 5 7
+Result: 12.00
+```
+
+---
+
+## License
+
+This project is open-source. Feel free to modify and improve it.
